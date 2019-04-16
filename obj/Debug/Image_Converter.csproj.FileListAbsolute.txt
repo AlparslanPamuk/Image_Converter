@@ -1,0 +1,10 @@
+C:\Users\alp_g\OneDrive\Desktop\C\Image_Converter\Image_Converter\bin\Debug\Image_Converter.exe.config
+C:\Users\alp_g\OneDrive\Desktop\C\Image_Converter\Image_Converter\bin\Debug\Image_Converter.exe
+C:\Users\alp_g\OneDrive\Desktop\C\Image_Converter\Image_Converter\bin\Debug\Image_Converter.pdb
+C:\Users\alp_g\OneDrive\Desktop\C\Image_Converter\Image_Converter\obj\Debug\Image_Converter.csprojAssemblyReference.cache
+C:\Users\alp_g\OneDrive\Desktop\C\Image_Converter\Image_Converter\obj\Debug\Image_Converter.Form1.resources
+C:\Users\alp_g\OneDrive\Desktop\C\Image_Converter\Image_Converter\obj\Debug\Image_Converter.Properties.Resources.resources
+C:\Users\alp_g\OneDrive\Desktop\C\Image_Converter\Image_Converter\obj\Debug\Image_Converter.csproj.GenerateResource.cache
+C:\Users\alp_g\OneDrive\Desktop\C\Image_Converter\Image_Converter\obj\Debug\Image_Converter.csproj.CoreCompileInputs.cache
+C:\Users\alp_g\OneDrive\Desktop\C\Image_Converter\Image_Converter\obj\Debug\Image_Converter.exe
+C:\Users\alp_g\OneDrive\Desktop\C\Image_Converter\Image_Converter\obj\Debug\Image_Converter.pdb
