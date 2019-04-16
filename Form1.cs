@@ -13,9 +13,11 @@ namespace Image_Converter
 {
     public partial class Form1 : Form
     {
+
         Bitmap newBitmap;
         Image file;
         Boolean opened = false;
+        int BlurLevel = 1;
 
         public Form1()
         {
@@ -81,6 +83,40 @@ namespace Image_Converter
                 }
             }
             pictureBox1.Image = newBitmap;
+        }
+
+        private void btnblur_Click(object sender, EventArgs e)
+        {
+
+            for (int x = BlurLevel; x <= newBitmap.Width - BlurLevel; x++)
+            {
+                for (int y = BlurLevel; y <= newBitmap.Height - BlurLevel; y++)
+                {
+                    try
+                    {
+                        Color prevX = newBitmap.GetPixel(x - BlurLevel, y);
+                        Color nextX = newBitmap.GetPixel(x + BlurLevel, y);
+                        Color prevY = newBitmap.GetPixel(x, y - BlurLevel);
+                        Color nextY = newBitmap.GetPixel(x, y + BlurLevel);
+
+                        int avgRed = (int)((prevX.R + nextX.R + prevY.R + nextY.R) / 4);
+                        int avgGreen = (int)((prevX.G + nextX.G + prevY.G + nextY.G) / 4);
+                        int avgBlue = (int)((prevX.B + nextX.B + prevY.B + nextY.B) / 4);
+
+                        newBitmap.SetPixel(x, y, Color.FromArgb(avgRed, avgGreen, avgBlue));
+                    }
+                    catch (Exception)
+                    {
+
+                        
+                    }
+                }
+                pictureBox1.Image = newBitmap;
+            }   }
+
+        private void trackBar1_Scroll(object sender, EventArgs e)
+        {
+            BlurLevel = int.Parse(trackBar1.Value.ToString());
         }
     }
 }
